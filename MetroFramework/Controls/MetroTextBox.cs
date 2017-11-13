@@ -337,7 +337,7 @@ namespace MetroFramework.Controls
         private bool _witherror = false;
 
         [DefaultValue(false)]
-        [EditorBrowsable(EditorBrowsableState.Never)]
+        [Browsable(false)]
         public bool WithError
         {
             get { return _witherror; }
@@ -497,6 +497,7 @@ namespace MetroFramework.Controls
             get { return baseTextBox.ShortcutsEnabled; }
             set { baseTextBox.ShortcutsEnabled = value; }
         }
+
         #endregion
 
         #region Constructor
